@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee mgmt system</title>
+</head>
+
+<body>
+
+    <h1>Employee mgmt system</h1>
+    <input type="number" placeholder="id" id="emp-id">
+    <input type="text" placeholder="name" id="emp-name">
+    <input type="number" placeholder="salary" id="emp-salary">
+    <input type="number" placeholder="bonus" id="emp-bonus">
+    <input type="number" placeholder="commision" id="emp-comission">
+    <select name="position" id="emp-position">
+        <option value="">Select from the options</option>
+        <option value="analyst">Analyst</option>
+        <option value="programmer">Programmer</option>
+        <option value="manager">Manager</option>
+    </select>
+    <button id="save_data">save user data</button>
+    <button id="show_data">show user data</button>
+    <!-- creating tbale to show the data which is in loacl storage -->
+    <table id="table">
+        <thead id="table-head">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Comission</th>
+            <th>Bonus</th>
+        </thead>
+        <tbody id="user_info_table">
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>
